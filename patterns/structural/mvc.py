@@ -7,7 +7,8 @@ from abc import ABC, abstractmethod
 
 
 class Model(ABC):
-    @abstractmethod
+    @abstractmethod         # 抽象方法，只能存在于抽象类或者其子类中，继承该类的子类必须重写其所有接口才能被实例化，参考如下
+    # https://stackoverflow.com/questions/7196376/python-abstractmethod-decorator
     def __iter__(self):
         pass
 
